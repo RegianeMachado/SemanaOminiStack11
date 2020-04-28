@@ -1,0 +1,36 @@
+express biblioteca - instala para controlar as rotas 
+node index.js - iniciar servidor 
+
+https://insomnia.rest/ - testes com rotas
+
+Tipos de parâmetros que pode enviar para uma rota:
+Query Params: Parâmetros nomeados enviados na rota após o "?" (Filtros, paginação)
+Route Params: Parâmetros utilizados para identificar recursos
+Request Body: Corpo da requisição, utilizado para criar ou alterar recursos
+
+npm install nodemon -D
+o -D só adiciona na dependencia de dev no package.json
+
+para integrar com banco
+Driver: usa sql
+Query Builder: usa js - usamos o knexjs para auxiliar com isso
+    npm install knex --save
+    instala o driver do banco  npm install sqlite3
+    cria um arquivo de configuração de acesso com o banco npx knex init
+    ./ referencia a propria pasta
+
+nodemon instala para deixar sempre o backend rodando, altera o package.json 
+
+Criar migrations
+npx knex migrate:make nome
+
+npx knex mostra todos os comandos
+
+npx knex migrate: latest
+rodar as migrate
+
+npx knex migrate:rollback
+deleta a última tabela criada
+
+npm install cors
+verificação de segurança
