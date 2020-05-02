@@ -47,3 +47,24 @@ axios client http
 
 Formatar moeda
 {Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'}).format(incident.value)}
+
+Para começar o mobile instala o expo
+install -g expo-cli
+    https://docs.expo.io/ - doc do expo
+     cria o projeto expo init projeto-mobile
+
+execução do projeto
+ yarn start - abre o mobile e mostra o qrcode
+ para ler no app do expo e ver a aplicação
+
+ O react Native não tem as mesmas tags do html
+    não tem semântica
+    muda a estilização coloca style e o objeto, sem class ou id
+    não tem display block e afins, tudo é display flex
+    não existe herança de estilo
+
+    React Navigation - criar rotas no reative native
+        https://reactnavigation.org/docs/hello-react-navigation
+        
+mandar e-mail 
+    expo install expo-mail-composer
